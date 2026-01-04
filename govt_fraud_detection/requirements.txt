@@ -1,0 +1,15 @@
+# Core Machine Learning
+torch>=2.5.0
+pandas>=2.2.0
+numpy>=2.1.0
+scikit-learn>=1.5.0
+
+# Transformer & Tabular Utilities
+rtdl>=0.0.13
+xgboost>=2.1.0
+
+# API & Data Handling
+requests>=2.32.0
+pyyaml>=6.0.1
+matplotlib>=3.9.0
+seaborn>=0.13.0

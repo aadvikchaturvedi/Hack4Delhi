@@ -1,0 +1,23 @@
+# Government Fraud Detection Config
+project:
+  name: "India-Gov-Oversight-Transformer"
+  version: "1.0.0"
+
+data:
+  api_key: "YOUR_OGD_INDIA_API_KEY"
+  resource_id: "f507b5e3-9977-463d-..." # Update with relevant data.gov.in ID
+  raw_path: "data/raw_spending.csv"
+  processed_path: "data/processed_india_spending.csv"
+
+thresholds:
+  split_purchase_limit: 500000  # 5 Lakhs (Common GFR threshold)
+  high_risk_z_score: 3.0
+  contamination_rate: 0.01      # Expected % of anomalies
+
+model:
+  embed_dim: 128
+  n_heads: 8
+  n_layers: 4
+  dropout: 0.1
+  epochs: 20
+  batch_size: 64
